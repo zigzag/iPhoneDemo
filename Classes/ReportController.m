@@ -42,13 +42,9 @@
 	aWebView.autoresizingMask=(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
 //	//set the web view and acceleration delagates for the web view to be itself
 ////	[aWebView setDelegate:self];
-//	//determine the path the to the index.html file in the Resources directory
-//	NSString *filePathString = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-//	//build the URL and the request for the index.html file
-	NSURL *aURL = [NSURL URLWithString:@"http://redmine.finalist.hk/projects/guanxin/burndown"];
-	NSURLRequest *aRequest = [NSURLRequest requestWithURL:aURL];
-//	//load the index.html file into the web view.
-	[aWebView loadRequest:aRequest];
+
+	[aWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]isDirectory:NO]]];
+	
 //	
 //	//add the web view to the content view
 	[contentView addSubview:aWebView];
@@ -66,7 +62,21 @@
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+/*
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+	//CATransition *transition =[CATransition animation];
+	//	[transition setType:kCATransitionFade];
+	//	[transition setDuration:duration];
+	//	[self.view.layer addAnimation:transition forKey:@"idunno"];
+}
+*/
+
+/*
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 }
 */
 

@@ -11,6 +11,8 @@
 		0033E30411097B4100E01B07 /* fuel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30111097B4100E01B07 /* fuel.png */; };
 		0033E31811097C4E00E01B07 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E31711097C4E00E01B07 /* star.png */; };
 		007D4C10110984DB00DC7299 /* ReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D4C0F110984DB00DC7299 /* ReportController.m */; };
+		007D4C5E110995A200DC7299 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C5D110995A200DC7299 /* index.html */; };
+		007D4C8A11099D0500DC7299 /* jquery-1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C781109997600DC7299 /* jquery-1.4.js */; };
 		1D3623260D0F684500981E51 /* cnpcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -25,6 +27,8 @@
 		0033E31711097C4E00E01B07 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		007D4C0E110984DB00DC7299 /* ReportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportController.h; sourceTree = "<group>"; };
 		007D4C0F110984DB00DC7299 /* ReportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportController.m; sourceTree = "<group>"; };
+		007D4C5D110995A200DC7299 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		007D4C781109997600DC7299 /* jquery-1.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.js"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* cnpcAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cnpcAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* cnpcAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cnpcAppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007D4C771109997600DC7299 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				007D4C781109997600DC7299 /* jquery-1.4.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				007D4C771109997600DC7299 /* js */,
+				007D4C5D110995A200DC7299 /* index.html */,
 				0033E31711097C4E00E01B07 /* star.png */,
 				0033E30011097B4100E01B07 /* bar-chart.png */,
 				0033E30111097B4100E01B07 /* fuel.png */,
@@ -155,10 +169,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007D4C8A11099D0500DC7299 /* jquery-1.4.js in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				0033E30311097B4100E01B07 /* bar-chart.png in Resources */,
 				0033E30411097B4100E01B07 /* fuel.png in Resources */,
 				0033E31811097C4E00E01B07 /* star.png in Resources */,
+				007D4C5E110995A200DC7299 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

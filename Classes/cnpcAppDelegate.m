@@ -7,6 +7,8 @@
 //
 
 #import "cnpcAppDelegate.h"
+#import "ReportController.h"
+
 
 @implementation cnpcAppDelegate
 
@@ -21,7 +23,7 @@
 	// Build array of UIViewControllers for each screen
 	NSMutableArray  *viewControllers = [[NSMutableArray alloc] init];
 
-	UIViewController *reportController = [[UIViewController alloc]init];
+	ReportController *reportController = [[ReportController alloc]init];
 	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"业务" image:[UIImage imageNamed:@"bar-chart.png"] tag:1]];
 	[viewControllers addObject:reportController];
 	[reportController release];

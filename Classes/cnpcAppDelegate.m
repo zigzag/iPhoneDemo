@@ -22,17 +22,17 @@
 	NSMutableArray  *viewControllers = [[NSMutableArray alloc] init];
 
 	UIViewController *reportController = [[UIViewController alloc]init];
-	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1]];
+	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"业务" image:[UIImage imageNamed:@"bar-chart.png"] tag:1]];
 	[viewControllers addObject:reportController];
 	[reportController release];
 
 	UIViewController *orgController = [[UIViewController alloc]init];
-	[orgController setTabBarItem:[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:2]];
+	[orgController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"组织" image:[UIImage imageNamed:@"fuel.png"] tag:2]];
 	[viewControllers addObject:orgController];
 	[orgController release];
 
 	UIViewController *markedController = [[UIViewController alloc]init];
-	[markedController setTabBarItem:[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:3]];
+	[markedController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"收藏" image:[UIImage imageNamed:@"star.png"] tag:3]];
 	[viewControllers addObject:markedController];
 	[markedController release];
 	
@@ -41,10 +41,8 @@
 	
 	[window addSubview:tabbarController.view];
 	
-	
     // Override point for customization after application launch
     [window makeKeyAndVisible];
-
 	
 }
 

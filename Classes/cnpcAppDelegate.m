@@ -8,6 +8,7 @@
 
 #import "cnpcAppDelegate.h"
 #import "ReportController.h"
+#import "OrgController.h"
 
 
 @implementation cnpcAppDelegate
@@ -21,25 +22,17 @@
 	
 	// Get array of screens
 	// Build array of UIViewControllers for each screen
-	NSMutableArray  *viewControllers = [[NSMutableArray alloc] init];
 
-	ReportController *reportController = [[ReportController alloc]init];
+	ReportController *reportController = [[[ReportController alloc]init] autorelease];
 	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"业务" image:[UIImage imageNamed:@"bar-chart.png"] tag:1]];
-	[viewControllers addObject:reportController];
-	[reportController release];
 
-	UIViewController *orgController = [[UIViewController alloc]init];
+	OrgController *orgController = [[[OrgController alloc]init] autorelease];
 	[orgController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"组织" image:[UIImage imageNamed:@"fuel.png"] tag:2]];
-	[viewControllers addObject:orgController];
-	[orgController release];
 
-	UIViewController *markedController = [[UIViewController alloc]init];
+	UIViewController *markedController = [[[UIViewController alloc]init] autorelease];
 	[markedController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"收藏" image:[UIImage imageNamed:@"star.png"] tag:3]];
-	[viewControllers addObject:markedController];
-	[markedController release];
 	
-	[tabbarController setViewControllers:viewControllers];
-	[viewControllers release];
+	tabbarController.viewControllers = [NSArray arrayWithObjects:reportController, orgController, markedController, nil];
 	
 	[window addSubview:tabbarController.view];
 	
@@ -47,7 +40,6 @@
     [window makeKeyAndVisible];
 	
 }
-
 
 - (void)dealloc {
     [window release];

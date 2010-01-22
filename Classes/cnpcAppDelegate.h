@@ -10,6 +10,7 @@
 
 @interface cnpcAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	UITabBarController *tabbarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

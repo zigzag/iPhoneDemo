@@ -322,7 +322,7 @@
 		fRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */;
 		name = "cnpcAppDelegate.m: 26";
 		rLen = 0;
-		rLoc = 675;
+		rLoc = 598;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 134;
@@ -332,7 +332,7 @@
 		fRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */;
 		name = "cnpcAppDelegate.m: 26";
 		rLen = 0;
-		rLoc = 675;
+		rLoc = 598;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 134;
@@ -387,6 +387,36 @@
 		vrLen = 1086;
 		vrLoc = 494;
 	};
+	0033E2F11109669A00E01B07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */;
+		name = "cnpcAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 163;
+	};
+	0033E2F41109674A00E01B07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */;
+		name = "cnpcAppDelegate.m: 25";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 163;
+	};
+	0033E2F51109676500E01B07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */;
+		name = "cnpcAppDelegate.m: 25";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 1341;
+		vrLoc = 163;
+	};
 	1D3623240D0F684500981E51 /* cnpcAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 508}}";
@@ -397,9 +427,9 @@
 	};
 	1D3623250D0F684500981E51 /* cnpcAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 826}}";
-			sepNavSelRange = "{1580, 0}";
-			sepNavVisRange = "{494, 1086}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 756}}";
+			sepNavSelRange = "{565, 0}";
+			sepNavVisRange = "{163, 1341}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* cnpc */ = {
@@ -480,6 +510,9 @@
 			0033E2E4110964CE00E01B07 /* PBXTextBookmark */ = 0033E2E4110964CE00E01B07 /* PBXTextBookmark */;
 			0033E2E91109652B00E01B07 /* PBXTextBookmark */ = 0033E2E91109652B00E01B07 /* PBXTextBookmark */;
 			0033E2EA1109659000E01B07 /* PBXTextBookmark */ = 0033E2EA1109659000E01B07 /* PBXTextBookmark */;
+			0033E2F11109669A00E01B07 /* PBXTextBookmark */ = 0033E2F11109669A00E01B07 /* PBXTextBookmark */;
+			0033E2F41109674A00E01B07 /* PBXTextBookmark */ = 0033E2F41109674A00E01B07 /* PBXTextBookmark */;
+			0033E2F51109676500E01B07 /* PBXTextBookmark */ = 0033E2F51109676500E01B07 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 0033E27D110954C300E01B07 /* Source Control */;
 		userBuildSettings = {

@@ -26,13 +26,14 @@
 	ReportController *reportController = [[[ReportController alloc]init] autorelease];
 	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"业务" image:[UIImage imageNamed:@"bar-chart.png"] tag:1]];
 
-	OrgController *orgController = [[[OrgController alloc]init] autorelease];
+	OrgController *orgController = [[[OrgController alloc]initWithLevel:0] autorelease];
 	[orgController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"组织" image:[UIImage imageNamed:@"fuel.png"] tag:2]];
+	navigationController = [[[UINavigationController alloc] initWithRootViewController:orgController] autorelease];
 
 	UIViewController *markedController = [[[UIViewController alloc]init] autorelease];
 	[markedController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"收藏" image:[UIImage imageNamed:@"star.png"] tag:3]];
 	
-	tabbarController.viewControllers = [NSArray arrayWithObjects:reportController, orgController, markedController, nil];
+	tabbarController.viewControllers = [NSArray arrayWithObjects:reportController, navigationController, markedController, nil];
 	
 	[window addSubview:tabbarController.view];
 	

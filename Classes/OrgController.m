@@ -7,24 +7,52 @@
 //
 
 #import "OrgController.h"
-
+#import "ReportController.h"
 
 @implementation OrgController
 
-/*
-- (id)initWithStyle:(UITableViewStyle)style {
+/* */
+- (id)initWithLevel:(NSInteger)level{
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
+	currentLevel = &level;
+	NSLog(@"CurrentLevel:%d",currentLevel);
+    if (self = [super init]) {
+		switch (level)
+		{
+			case 0:
+				self.title = @"首页";
+				topList = [[NSArray alloc] initWithObjects: @"全国",@"全国加油站汇总",@"全国油库汇总",nil];
+				break;
+			case 1:
+				self.title = @"全国";
+				topList = [[NSArray alloc] initWithObjects: @"山东",@"山西",@"河南",@"河北",@"湖南",@"湖北",@"广东",@"广西",@"内蒙古",@"陕西",@"江西",nil];
+				break;
+			default:
+				NSLog (@"Unexpected level for OrgController %d.", level);
+				break;
+		}
     }
     return self;
 }
-*/
+
+
+- (void)loadView {
+	[super loadView];
+	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,40)];
+	sBar.delegate = self;
+	[self.view addSubview:sBar];
+	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,41,320,400) style:UITableViewStyleGrouped];
+	tableView.delegate = self;
+	tableView.dataSource = self;
+	[self.view addSubview:tableView];
+}
+
+
 
 - (void)viewDidLoad {
-	topList = [[NSArray alloc] initWithObjects: @"全国",@"全国加油站汇总",@"全国油库汇总",nil];
     [super viewDidLoad];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	// self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 
@@ -76,31 +104,44 @@
 
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:nil];
-    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"TrailCell"];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"TrailCell"] autorelease];
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    }
+	cell.image = [UIImage imageNamed:@"bar-chart.png"];
     cell.text = [topList objectAtIndex:indexPath.row];
+	return cell;
 	
-    return [cell autorelease];
+//	UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:nil];
+//    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    cell.text = [topList objectAtIndex:indexPath.row];
+//    return [cell autorelease];
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
+	// Create a view controller with the title as its
+	// navigation title and push it.
+	NSUInteger row = indexPath.row;
+	NSLog(@"Row Selected:%d",row);
+	if (row != NSNotFound)
+	{
+		OrgController *l2OrgController = [[[OrgController alloc]initWithLevel:1] autorelease];
+		[[self navigationController] pushViewController:l2OrgController animated:YES];
+	}
 }
 
 
-/*
+/* */
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+
 
 
 /*
@@ -133,10 +174,32 @@
 }
 */
 
+#pragma mark searchBar delegate methods
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+	// only show the status bar’s cancel button while in edit mode
+	sBar.showsCancelButton = YES;
+	sBar.autocorrectionType = UITextAutocorrectionTypeNo;
+	// flush the previous search content
+}
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+	sBar.showsCancelButton = NO;
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+	[sBar resignFirstResponder];
+	sBar.text = @"";
+}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+
+}
 
 - (void)dealloc {
-    [super dealloc];
 	[topList release];
+    [super dealloc];
 }
 
 

@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface OrgController : UITableViewController {
+@interface OrgController : UIViewController <UITableViewDelegate, UISearchBarDelegate, UITableViewDataSource>{
 	NSArray *topList;
+	UITableView *tableView;
+	UISearchBar *sBar;
+	NSInteger *currentLevel;
 }
+
 
 @end

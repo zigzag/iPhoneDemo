@@ -13,6 +13,7 @@
 		007D4C10110984DB00DC7299 /* ReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D4C0F110984DB00DC7299 /* ReportController.m */; };
 		007D4C5E110995A200DC7299 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C5D110995A200DC7299 /* index.html */; };
 		007D4C8A11099D0500DC7299 /* jquery-1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C781109997600DC7299 /* jquery-1.4.js */; };
+		00DF1F5E110D94D100938BA2 /* ReportImageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF1F5D110D94D100938BA2 /* ReportImageControl.m */; };
 		00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5B65F1109ACF0005EFC03 /* OrgController.m */; };
 		1D3623260D0F684500981E51 /* cnpcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -30,6 +31,8 @@
 		007D4C0F110984DB00DC7299 /* ReportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportController.m; sourceTree = "<group>"; };
 		007D4C5D110995A200DC7299 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		007D4C781109997600DC7299 /* jquery-1.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.js"; sourceTree = "<group>"; };
+		00DF1F5C110D94D100938BA2 /* ReportImageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportImageControl.h; sourceTree = "<group>"; };
+		00DF1F5D110D94D100938BA2 /* ReportImageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportImageControl.m; sourceTree = "<group>"; };
 		00E5B65E1109ACF0005EFC03 /* OrgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgController.h; sourceTree = "<group>"; };
 		00E5B65F1109ACF0005EFC03 /* OrgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +78,8 @@
 				007D4C0F110984DB00DC7299 /* ReportController.m */,
 				00E5B65E1109ACF0005EFC03 /* OrgController.h */,
 				00E5B65F1109ACF0005EFC03 /* OrgController.m */,
+				00DF1F5C110D94D100938BA2 /* ReportImageControl.h */,
+				00DF1F5D110D94D100938BA2 /* ReportImageControl.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				1D3623260D0F684500981E51 /* cnpcAppDelegate.m in Sources */,
 				007D4C10110984DB00DC7299 /* ReportController.m in Sources */,
 				00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */,
+				00DF1F5E110D94D100938BA2 /* ReportImageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

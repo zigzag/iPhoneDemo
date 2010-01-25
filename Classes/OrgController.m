@@ -8,6 +8,7 @@
 
 #import "OrgController.h"
 #import "ReportController.h"
+#import "ReportImageControl.h"
 
 @implementation OrgController
 
@@ -116,6 +117,11 @@
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"TrailCell"] autorelease];
 		cell.image = [UIImage imageNamed:@"bar-chart.png"];
 		cell.text = [topList objectAtIndex:indexPath.row];
+
+		ReportImageControl *imageControl = [[ReportImageControl alloc] initWithFrame:cell.frame	tabBar:[self tabBarController]];
+		imageControl.tag = indexPath.row;  // for reference in notifications.
+		[cell.contentView addSubview: imageControl];
+		
 		if (currentLevel < 2) {
 			cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 		}
@@ -137,9 +143,7 @@
 	if (row != NSNotFound && currentLevel < 2) {
 		OrgController *l2OrgController = [[[OrgController alloc]initWithLevel:currentLevel + 1] autorelease];
 		[[self navigationController] pushViewController:l2OrgController animated:YES];
-	} else {
-		[self tabBarController].selectedIndex = 0;
-	}
+	} 
 }
 
 

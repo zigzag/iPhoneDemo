@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>00DF1F5B110D946B00938BA2</string>
+										<string>00DF1F9D110D9AB700938BA2</string>
 										<key>history</key>
 										<array>
 											<string>0033E30811097BBE00E01B07</string>
@@ -341,8 +341,10 @@
 											<string>00D31081110D867F00445A4C</string>
 											<string>00DF1F4E110D944A00938BA2</string>
 											<string>00DF1F4F110D944A00938BA2</string>
-											<string>00DF1F50110D944A00938BA2</string>
-											<string>00DF1F51110D944A00938BA2</string>
+											<string>00DF1F7B110D99B100938BA2</string>
+											<string>00DF1F8D110D9A3D00938BA2</string>
+											<string>00DF1F98110D9AA300938BA2</string>
+											<string>00DF1F99110D9AA300938BA2</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -375,6 +377,26 @@
 											<string>00DF1F57110D944A00938BA2</string>
 											<string>00DF1F58110D944A00938BA2</string>
 											<string>00DF1F59110D944A00938BA2</string>
+											<string>00DF1F63110D980C00938BA2</string>
+											<string>00DF1F64110D980C00938BA2</string>
+											<string>00DF1F65110D980C00938BA2</string>
+											<string>00DF1F66110D980C00938BA2</string>
+											<string>00DF1F67110D980C00938BA2</string>
+											<string>00DF1F7F110D99B100938BA2</string>
+											<string>00DF1F80110D99B100938BA2</string>
+											<string>00DF1F81110D99B100938BA2</string>
+											<string>00DF1F82110D99B100938BA2</string>
+											<string>00DF1F83110D99B100938BA2</string>
+											<string>00DF1F84110D99B100938BA2</string>
+											<string>00DF1F85110D99B100938BA2</string>
+											<string>00DF1F86110D99B100938BA2</string>
+											<string>00DF1F87110D99B100938BA2</string>
+											<string>00DF1F88110D99B100938BA2</string>
+											<string>00DF1F8F110D9A3D00938BA2</string>
+											<string>00DF1F90110D9A3D00938BA2</string>
+											<string>00DF1F91110D9A3D00938BA2</string>
+											<string>00DF1F92110D9A3D00938BA2</string>
+											<string>00DF1F9A110D9AA300938BA2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -568,10 +590,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>00DF1F9E110D9AB700938BA2</string>
+		<string>00DF1F9F110D9AB700938BA2</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0033E2961109575100E01B07</string>
 		<string>/Users/zig/workspace/cnpc/cnpc.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1440 759 0 0 1440 878 </string>
@@ -590,12 +614,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>ReportImageControl.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -662,7 +688,7 @@
 			<key>WindowToolGUID</key>
 			<string>0033E2961109575100E01B07</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -943,7 +969,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -117,8 +117,8 @@
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"TrailCell"] autorelease];
 		cell.image = [UIImage imageNamed:@"bar-chart.png"];
 		cell.text = [topList objectAtIndex:indexPath.row];
+		ReportImageControl *imageControl = [[ReportImageControl alloc] initWithImageView:cell.imageView	tabBar:[self tabBarController]];
 
-		ReportImageControl *imageControl = [[ReportImageControl alloc] initWithFrame:cell.frame	tabBar:[self tabBarController]];
 		imageControl.tag = indexPath.row;  // for reference in notifications.
 		[cell.contentView addSubview: imageControl];
 		

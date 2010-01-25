@@ -12,10 +12,11 @@
 @implementation ReportImageControl
 //- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-- (id)initWithFrame:(CGRect)frame tabBar:(UITabBarController *)tabBarController
+- (id)initWithImageView:(UIImageView *)imageView tabBar:(UITabBarController *)tabBarController
 {
-	if ( self = [super initWithFrame: frame] ){
-		UIImageView *imageView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bar-chart.png"]];
+	
+	if ( self = [super initWithFrame: imageView.frame] ){
+//		UIImageView *imageView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bar-chart.png"]];
 		topTabBarController = tabBarController;
 		[self addSubview: imageView];
 		[self addTarget: self action: @selector(toggleImage) forControlEvents: UIControlEventTouchUpInside];

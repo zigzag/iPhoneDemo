@@ -13,7 +13,7 @@
 	NSArray *topList;
 	UITableView *tableView;
 	UISearchBar *sBar;
-	NSInteger *currentLevel;
+	NSInteger currentLevel;
 }
 
 

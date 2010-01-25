@@ -331,18 +331,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>004D116E110D8D1900D272B1</string>
+										<string>00DF1F5B110D946B00938BA2</string>
 										<key>history</key>
 										<array>
 											<string>0033E30811097BBE00E01B07</string>
 											<string>0033E30A11097BBE00E01B07</string>
 											<string>007D4C911109A34900DC7299</string>
 											<string>00D3104A110D829400445A4C</string>
-											<string>00D31080110D867F00445A4C</string>
 											<string>00D31081110D867F00445A4C</string>
-											<string>00D31082110D867F00445A4C</string>
-											<string>00D310B1110D8CE800445A4C</string>
-											<string>00D310B6110D8CFB00445A4C</string>
+											<string>00DF1F4E110D944A00938BA2</string>
+											<string>00DF1F4F110D944A00938BA2</string>
+											<string>00DF1F50110D944A00938BA2</string>
+											<string>00DF1F51110D944A00938BA2</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -355,6 +355,26 @@
 											<string>007D4C941109A34900DC7299</string>
 											<string>00E5B6851109AE32005EFC03</string>
 											<string>00E5B6861109AE32005EFC03</string>
+											<string>00DF1F21110D8FF900938BA2</string>
+											<string>00DF1F2A110D906100938BA2</string>
+											<string>00DF1F2B110D906100938BA2</string>
+											<string>00DF1F2C110D906100938BA2</string>
+											<string>00DF1F2D110D906100938BA2</string>
+											<string>00DF1F2E110D906100938BA2</string>
+											<string>00DF1F2F110D906100938BA2</string>
+											<string>00DF1F30110D906100938BA2</string>
+											<string>00DF1F3C110D90AE00938BA2</string>
+											<string>00DF1F3D110D90AE00938BA2</string>
+											<string>00DF1F3E110D90AE00938BA2</string>
+											<string>00DF1F3F110D90AE00938BA2</string>
+											<string>00DF1F52110D944A00938BA2</string>
+											<string>00DF1F53110D944A00938BA2</string>
+											<string>00DF1F54110D944A00938BA2</string>
+											<string>00DF1F55110D944A00938BA2</string>
+											<string>00DF1F56110D944A00938BA2</string>
+											<string>00DF1F57110D944A00938BA2</string>
+											<string>00DF1F58110D944A00938BA2</string>
+											<string>00DF1F59110D944A00938BA2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -412,9 +432,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>004D116F110D8D1900D272B1</string>
+				<string>00DF1F23110D8FF900938BA2</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>004D1170110D8D1900D272B1</string>
+				<string>00DF1F24110D8FF900938BA2</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -548,6 +568,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>0033E2961109575100E01B07</string>
 		<string>/Users/zig/workspace/cnpc/cnpc.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -567,14 +590,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>OrgController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -630,7 +651,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>0033E2961109575100E01B07</string>
-				<string>00D30F3B110D65DF00445A4C</string>
+				<string>00DF1F32110D906100938BA2</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -672,8 +693,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 201}}</string>
-											<string>{{316, 0}, {378, 201}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -688,8 +709,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 201}}</string>
-											<string>{{0, 201}, {694, 180}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -722,7 +743,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 201}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 433 694 422 0 0 1440 878 </string>
 								</dict>
@@ -750,13 +771,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>00D30F3C110D65DF00445A4C</string>
+				<string>00DF1F41110D90AE00938BA2</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>00D30F3D110D65DF00445A4C</string>
-				<string>00D30F3E110D65DF00445A4C</string>
-				<string>00D30F3F110D65DF00445A4C</string>
-				<string>00D30F40110D65DF00445A4C</string>
-				<string>00D30F41110D65DF00445A4C</string>
+				<string>00DF1F42110D90AE00938BA2</string>
+				<string>00DF1F43110D90AE00938BA2</string>
+				<string>00DF1F44110D90AE00938BA2</string>
+				<string>00DF1F45110D90AE00938BA2</string>
+				<string>00DF1F46110D90AE00938BA2</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -912,7 +933,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>00D30F44110D65DF00445A4C</string>
+				<string>00DF1F47110D90AE00938BA2</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -922,7 +943,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

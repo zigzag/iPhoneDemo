@@ -11,10 +11,11 @@
 
 @implementation OrgController
 
+
 /* */
 - (id)initWithLevel:(NSInteger)level{
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-	currentLevel = &level;
+	currentLevel = level;
 	NSLog(@"CurrentLevel:%d",currentLevel);
     if (self = [super init]) {
 		switch (level)
@@ -26,6 +27,10 @@
 			case 1:
 				self.title = @"全国";
 				topList = [[NSArray alloc] initWithObjects: @"山东",@"山西",@"河南",@"河北",@"湖南",@"湖北",@"广东",@"广西",@"内蒙古",@"陕西",@"江西",nil];
+				break;
+			case 2:
+				self.title = @"山东省";
+				topList = [[NSArray alloc] initWithObjects: @"青岛油库",@"潍坊油库",@"周村油库",nil];
 				break;
 			default:
 				NSLog (@"Unexpected level for OrgController %d.", level);
@@ -109,10 +114,12 @@
 	UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"TrailCell"];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"TrailCell"] autorelease];
-        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		cell.image = [UIImage imageNamed:@"bar-chart.png"];
+		cell.text = [topList objectAtIndex:indexPath.row];
+		if (currentLevel < 2) {
+			cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		}
     }
-	cell.image = [UIImage imageNamed:@"bar-chart.png"];
-    cell.text = [topList objectAtIndex:indexPath.row];
 	return cell;
 	
 //	UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:nil];
@@ -127,10 +134,11 @@
 	// navigation title and push it.
 	NSUInteger row = indexPath.row;
 	NSLog(@"Row Selected:%d",row);
-	if (row != NSNotFound)
-	{
-		OrgController *l2OrgController = [[[OrgController alloc]initWithLevel:1] autorelease];
+	if (row != NSNotFound && currentLevel < 2) {
+		OrgController *l2OrgController = [[[OrgController alloc]initWithLevel:currentLevel + 1] autorelease];
 		[[self navigationController] pushViewController:l2OrgController animated:YES];
+	} else {
+		[self tabBarController].selectedIndex = 0;
 	}
 }
 

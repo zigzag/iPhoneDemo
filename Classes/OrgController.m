@@ -8,7 +8,6 @@
 
 #import "OrgController.h"
 #import "ReportController.h"
-#import "ReportImageControl.h"
 
 @implementation OrgController
 
@@ -114,14 +113,20 @@
     
 	UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"TrailCell"];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"TrailCell"] autorelease];
-		cell.image = [UIImage imageNamed:@"bar-chart.png"];
-		cell.text = [topList objectAtIndex:indexPath.row];
-		ReportImageControl *imageControl = [[ReportImageControl alloc] initWithImageView:cell.imageView	tabBar:[self tabBarController]];
-
-		imageControl.tag = indexPath.row;  // for reference in notifications.
-		[cell.contentView addSubview: imageControl];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TrailCell"] autorelease];
 		
+		cell.textLabel.text = [topList objectAtIndex:indexPath.row];
+
+		cell.imageView.image = [UIImage imageNamed:@"bar-chart.png"];
+		cell.imageView.alpha = 0.0f;
+		UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+		[button setImage:[UIImage imageNamed:@"bar-chart.png"] forState:UIControlStateNormal];
+		[button setImage:[UIImage imageNamed:@"bar-chart.png"] forState:UIControlStateHighlighted];
+
+		button.contentEdgeInsets = UIEdgeInsetsMake(15, 15, 0, 0);
+		[button addTarget: self action: @selector(jumpToReport) forControlEvents: UIControlEventTouchDown];
+		
+		[cell.contentView addSubview:button];
 		if (currentLevel < 2) {
 			cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 		}
@@ -207,6 +212,12 @@
 }
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 
+}
+
+- (void) jumpToReport
+{
+	NSLog(@"jumpToReport called!");
+	[[self tabBarController] setSelectedIndex:0];
 }
 
 - (void)dealloc {

@@ -22,15 +22,15 @@
 		{
 			case 0:
 				self.title = @"首页";
-				topList = [[NSArray alloc] initWithObjects: @"全国",@"全国加油站汇总",@"全国油库汇总",nil];
+				topList = [[NSMutableArray alloc] initWithObjects: @"全国",@"全国加油站汇总",@"全国油库汇总",nil];
 				break;
 			case 1:
 				self.title = @"全国";
-				topList = [[NSArray alloc] initWithObjects: @"山东",@"山西",@"河南",@"河北",@"湖南",@"湖北",@"广东",@"广西",@"内蒙古",@"陕西",@"江西",nil];
+				topList = [[NSMutableArray alloc] initWithObjects: @"山东",@"山西",@"河南",@"河北",@"湖南",@"湖北",@"广东",@"广西",@"内蒙古",@"陕西",@"江西",nil];
 				break;
 			case 2:
 				self.title = @"山东省";
-				topList = [[NSArray alloc] initWithObjects: @"青岛油库",@"潍坊油库",@"周村油库",nil];
+				topList = [[NSMutableArray alloc] initWithObjects: @"青岛油库",@"潍坊油库",@"周村油库",nil];
 				break;
 			default:
 				NSLog (@"Unexpected level for OrgController %d.", level);
@@ -43,13 +43,32 @@
 
 - (void)loadView {
 	[super loadView];
-	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,40)];
+	float startTop = 0.0f;
+	
+	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,startTop,320,40)];
+	startTop += 40;
 	sBar.delegate = self;
 	[self.view addSubview:sBar];
-	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,41,320,400) style:UITableViewStyleGrouped];
+	
+	if (currentLevel == 2) {
+		segment = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"油库",@"加油站",nil]];
+		[segment setSelectedSegmentIndex:0];
+		
+		UIView *segmentView = [[[UITableView alloc]initWithFrame:CGRectMake(0,startTop, 320,60) style:UITableViewStyleGrouped] autorelease];
+		[self.view addSubview:segmentView];
+
+		[segment setFrame:CGRectMake(80,startTop + 10, 160,40)];
+//		[segmentView addSubview:segment];
+		
+		startTop += 60;
+		[self.view addSubview:segment];
+	}
+	
+	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,startTop,320,400) style:UITableViewStyleGrouped];
 	tableView.delegate = self;
 	tableView.dataSource = self;
 	[self.view addSubview:tableView];
+	
 }
 
 
@@ -220,8 +239,11 @@
 	[[self tabBarController] setSelectedIndex:0];
 }
 
+
 - (void)dealloc {
 	[topList release];
+	[sBar release];
+	[segment release];
     [super dealloc];
 }
 

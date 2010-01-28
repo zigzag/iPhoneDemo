@@ -10,9 +10,10 @@
 
 
 @interface OrgController : UIViewController <UITableViewDelegate, UISearchBarDelegate, UITableViewDataSource>{
-	NSArray *topList;
+	NSMutableArray *topList;
 	UITableView *tableView;
 	UISearchBar *sBar;
+	UISegmentedControl *segment;
 	NSInteger currentLevel;
 }
 

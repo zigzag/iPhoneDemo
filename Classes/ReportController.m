@@ -27,15 +27,20 @@
 	// the base view for this view controller
 	UIView *contentView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 	contentView.backgroundColor = [UIColor lightGrayColor];
-
+	
+	UINavigationBar *titleBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 45)];
+	[titleBar pushNavigationItem:[[[UINavigationItem alloc]initWithTitle:@"全国销售日报"] autorelease] animated:NO];
+	[contentView addSubview:titleBar];
+	[titleBar release];
+	
 	// important for view orientation rotation
 	contentView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 	self.view = contentView;
 	self.view.autoresizesSubviews = YES;
 
-	CGRect webFrame = [[UIScreen mainScreen] applicationFrame];
-	webFrame.origin.y -= 20.0;	// shift the display up so that it covers the default open space from the content view
-	UIWebView *aWebView = [[UIWebView alloc] initWithFrame:webFrame];
+//	CGRect webFrame = [[UIScreen mainScreen] applicationFrame];
+//	webFrame.origin.y -= 20.0;	// shift the display up so that it covers the default open space from the content view
+	UIWebView *aWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 45, 320, 400)];
 //	
 	aWebView.scalesPageToFit = YES;
 	aWebView.autoresizesSubviews = YES;

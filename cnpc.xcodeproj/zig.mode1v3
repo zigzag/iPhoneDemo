@@ -270,14 +270,13 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>007D4C771109997600DC7299</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>1</integer>
+									<integer>12</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -312,14 +311,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>OrgController.m</string>
+								<string>jquery-1.4.js</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>OrgController.m</string>
+										<string>jquery-1.4.js</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>00E0002811117EE300D9B21C</string>
+										<string>00E000321111800200D9B21C</string>
 										<key>history</key>
 										<array>
 											<string>0033E30811097BBE00E01B07</string>
@@ -343,7 +340,8 @@
 											<string>004EF0C511116C0800FFDC7F</string>
 											<string>004EF1071111722900FFDC7F</string>
 											<string>004EF16611117C3100FFDC7F</string>
-											<string>004EF16B11117C3100FFDC7F</string>
+											<string>00E0002F1111800200D9B21C</string>
+											<string>00E000301111800200D9B21C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -357,6 +355,7 @@
 											<string>006DF189110FF13200511321</string>
 											<string>006DF18A110FF13200511321</string>
 											<string>004EF0C811116C0800FFDC7F</string>
+											<string>00E000311111800200D9B21C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -378,6 +377,8 @@
 							<string>615pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -551,9 +552,9 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>0033E2961109575100E01B07</string>
 		<string>/Users/zig/workspace/cnpc/cnpc.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1440 759 0 0 1440 878 </string>
@@ -925,7 +926,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

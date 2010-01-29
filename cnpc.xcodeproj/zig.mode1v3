@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RepController.m</string>
+								<string>FavController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,32 +332,30 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RepController.m</string>
+										<string>FavController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>00A9CD701112BE3100032CB8</string>
+										<string>00A9CE0C1112CCA800032CB8</string>
 										<key>history</key>
 										<array>
 											<string>0033E30811097BBE00E01B07</string>
 											<string>004EF0C511116C0800FFDC7F</string>
 											<string>00E0015E1111B6C000D9B21C</string>
 											<string>00E0018B1111B84000D9B21C</string>
-											<string>00A9CC731112849E00032CB8</string>
 											<string>00A9CC741112849E00032CB8</string>
 											<string>00A9CC9A111289AC00032CB8</string>
 											<string>00A9CCBB11129B5E00032CB8</string>
 											<string>00A9CCBC11129B5E00032CB8</string>
 											<string>00A9CCBD11129B5E00032CB8</string>
 											<string>00A9CD161112B42600032CB8</string>
-											<string>00A9CD631112BB4900032CB8</string>
-											<string>00A9CD641112BB4900032CB8</string>
-											<string>00A9CD651112BB4900032CB8</string>
-											<string>00A9CD661112BB4900032CB8</string>
-										</array>
-										<key>nextStack</key>
-										<array>
-											<string>00A9CD691112BB4900032CB8</string>
+											<string>00A9CD9A1112C0F200032CB8</string>
+											<string>00A9CDAF1112C48600032CB8</string>
+											<string>00A9CDB11112C48600032CB8</string>
+											<string>00A9CDDE1112C98D00032CB8</string>
+											<string>00A9CDE01112C98D00032CB8</string>
+											<string>00A9CE001112CBC600032CB8</string>
+											<string>00A9CE011112CBC600032CB8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -366,8 +364,6 @@
 											<string>0033E30F11097BBE00E01B07</string>
 											<string>004EF0C811116C0800FFDC7F</string>
 											<string>00E0003B1111829600D9B21C</string>
-											<string>00E0003F1111829600D9B21C</string>
-											<string>00A9CC781112849E00032CB8</string>
 											<string>00A9CC7A1112849E00032CB8</string>
 											<string>00A9CC7B1112849E00032CB8</string>
 											<string>00A9CC7C1112849E00032CB8</string>
@@ -380,8 +376,22 @@
 											<string>00A9CCC311129B5E00032CB8</string>
 											<string>00A9CCC411129B5E00032CB8</string>
 											<string>00A9CD191112B42600032CB8</string>
-											<string>00A9CD671112BB4900032CB8</string>
 											<string>00A9CD681112BB4900032CB8</string>
+											<string>00A9CD9B1112C0F200032CB8</string>
+											<string>00A9CDA51112C35A00032CB8</string>
+											<string>00A9CDA61112C35A00032CB8</string>
+											<string>00A9CDB41112C48600032CB8</string>
+											<string>00A9CDC21112C76500032CB8</string>
+											<string>00A9CDC31112C76500032CB8</string>
+											<string>00A9CDE21112C98D00032CB8</string>
+											<string>00A9CDE31112C98D00032CB8</string>
+											<string>00A9CDE41112C98D00032CB8</string>
+											<string>00A9CDE51112C98D00032CB8</string>
+											<string>00A9CDE61112C98D00032CB8</string>
+											<string>00A9CE021112CBC600032CB8</string>
+											<string>00A9CE031112CBC600032CB8</string>
+											<string>00A9CE041112CBC600032CB8</string>
+											<string>00A9CE051112CBC600032CB8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -598,12 +608,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>cnpcAppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -620,8 +632,6 @@
 							<string>336pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

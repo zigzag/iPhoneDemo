@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005C65881112D59700FF442D /* Definition.m in Sources */ = {isa = PBXBuildFile; fileRef = 005C65871112D59700FF442D /* Definition.m */; };
 		00A9CCAA11129B2000032CB8 /* bar.html in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CCA411129ADF00032CB8 /* bar.html */; };
 		00A9CCAB11129B2000032CB8 /* RGraph.bar.js in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CCA511129ADF00032CB8 /* RGraph.bar.js */; };
 		00A9CCAC11129B2000032CB8 /* RGraph.common.js in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CCA611129ADF00032CB8 /* RGraph.common.js */; };
@@ -37,6 +38,8 @@
 		0033E30011097B4100E01B07 /* bar-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-chart.png"; sourceTree = "<group>"; };
 		0033E30111097B4100E01B07 /* fuel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuel.png; sourceTree = "<group>"; };
 		0033E31711097C4E00E01B07 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		005C65861112D59700FF442D /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Definition.h; path = ../openremote/trunk/Panels/iPhone/Classes/Definition.h; sourceTree = SOURCE_ROOT; };
+		005C65871112D59700FF442D /* Definition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Definition.m; path = ../openremote/trunk/Panels/iPhone/Classes/Definition.m; sourceTree = SOURCE_ROOT; };
 		007D4C5D110995A200DC7299 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mootools-beta-1.2b2.js"; sourceTree = "<group>"; };
 		00A9CC851112895200032CB8 /* pie.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pie.html; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				005C65861112D59700FF442D /* Definition.h */,
+				005C65871112D59700FF442D /* Definition.m */,
 				1D3623240D0F684500981E51 /* cnpcAppDelegate.h */,
 				1D3623250D0F684500981E51 /* cnpcAppDelegate.m */,
 				00E5B65E1109ACF0005EFC03 /* OrgController.h */,
@@ -232,6 +237,7 @@
 				00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */,
 				00E0019B1111BC1000D9B21C /* RepController.m in Sources */,
 				00A9CD741112BF3600032CB8 /* FavController.m in Sources */,
+				005C65881112D59700FF442D /* Definition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

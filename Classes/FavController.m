@@ -75,7 +75,12 @@
     if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TrailCell"] autorelease];
 		
-		cell.textLabel.text = @"库存：100万吨";
+		if (indexPath.row == 0) {
+			cell.textLabel.text = @"库存：65万吨";
+		} else {
+			cell.textLabel.text = @"销售：125万吨";
+		}
+		
 		//[topList objectAtIndex:indexPath.row];
 		
 //		cell.imageView.image = [UIImage imageNamed:@"bar-chart.png"];
@@ -87,7 +92,7 @@
 //		button.contentEdgeInsets = UIEdgeInsetsMake(15, 15, 0, 0);
 //		[button addTarget: self action: @selector(jumpToReport) forControlEvents: UIControlEventTouchDown];
 		//		[cell.contentView addSubview:button];
-		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+//		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     }
 	return cell;
 }
@@ -97,7 +102,7 @@
 //}
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSArray *sectionArray = [NSArray arrayWithObjects:@"青岛油库",@"潍坊油库",nil];
+	NSArray *sectionArray = [NSArray arrayWithObjects:@"青岛油库2009年业务摘要",@"潍坊油库2009年8月业务摘要",nil];
 	return [sectionArray objectAtIndex:section];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "OrgController.h"
+#import "Definition.h"
 
 @implementation OrgController
 
@@ -162,6 +163,10 @@
 	// navigation title and push it.
 	NSUInteger row = indexPath.row;
 	NSLog(@"Row Selected:%d",row);
+	NSLog(@"currentOrg = %s",[Definition sharedDefinition].currentOrg);
+	
+	[[[Definition sharedDefinition] currentOrg] setString:[topList objectAtIndex:row]];
+
 	if (row != NSNotFound && currentLevel < 2) {
 		OrgController *l2OrgController = [[[OrgController alloc]initWithLevel:currentLevel + 1] autorelease];
 		[[self navigationController] pushViewController:l2OrgController animated:YES];
@@ -243,6 +248,8 @@
 
 -(void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 	if (animationID == @"GO_TO_REPORT"){
+//		NSLog(@"Will set title to:%s",[self currentOrg]);
+		[[[[self tabBarController] viewControllers] objectAtIndex:0] setTitle:[[Definition sharedDefinition] currentOrg]];
 		[[self tabBarController] setSelectedIndex:0];
 	}
 }

@@ -17,7 +17,6 @@
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-
 	tabbarController = [[UITabBarController alloc] init];
 	
 	// Get array of screens

@@ -8,7 +8,6 @@
 
 #import "RepController.h"
 
-
 @implementation RepController
 
 /*
@@ -72,6 +71,21 @@
 		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pie" ofType:@"html"]isDirectory:NO]]];
 	} else {
 		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bar" ofType:@"html"]isDirectory:NO]]];
+	}
+}
+
+-(IBAction)bookMarkReport:(id)sender{
+	[UIView beginAnimations:@"GO_TO_FAV" context:nil];
+	[UIView setAnimationDuration:1.25];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationTransition:103 forView:[self view] cache:YES];
+
+	[UIView commitAnimations];
+}
+
+-(void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+	if (animationID == @"GO_TO_FAV"){
+		[[self tabBarController] setSelectedIndex:2];
 	}
 }
 

@@ -22,7 +22,6 @@
 		00A9CCB611129B2000032CB8 /* bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30011097B4100E01B07 /* bar-chart.png */; };
 		00A9CCB711129B2000032CB8 /* fuel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30111097B4100E01B07 /* fuel.png */; };
 		00A9CCB811129B2000032CB8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		00A9CCB911129B2000032CB8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
 		00E0019B1111BC1000D9B21C /* RepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E001991111BC1000D9B21C /* RepController.m */; };
 		00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5B65F1109ACF0005EFC03 /* OrgController.m */; };
 		1D3623260D0F684500981E51 /* cnpcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* cnpcAppDelegate.m */; };
@@ -209,7 +208,6 @@
 				00A9CCB611129B2000032CB8 /* bar-chart.png in Resources */,
 				00A9CCB711129B2000032CB8 /* fuel.png in Resources */,
 				00A9CCB811129B2000032CB8 /* MainWindow.xib in Resources */,
-				00A9CCB911129B2000032CB8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

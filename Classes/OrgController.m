@@ -233,8 +233,18 @@
 
 - (void) jumpToReport
 {
-	NSLog(@"jumpToReport called!");
-	[[self tabBarController] setSelectedIndex:0];
+	[UIView beginAnimations:@"GO_TO_REPORT" context:nil];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:[[[[self tabBarController] viewControllers] objectAtIndex:0] view] cache:YES];
+	[UIView commitAnimations];
+}
+
+
+-(void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+	if (animationID == @"GO_TO_REPORT"){
+		[[self tabBarController] setSelectedIndex:0];
+	}
 }
 
 

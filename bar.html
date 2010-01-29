@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RGraph: HTML5 canvas graph library - bar chart</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <script src="RGraph.common.js" ></script>
+    <script src="RGraph.bar.js" ></script>
+
+    <script>
+        /**
+        * These are the callback functions for the context menu
+        */
+        function Callback1()
+        {
+            alert('Menu item 1 selected!');
+        }
+
+        function Callback2()
+        {
+            alert('Menu item 2 selected!');
+        }
+
+
+        /**
+        * The onload function creates the graph
+        */
+        window.onload = function ()
+        {
+            var bar2 = new RGraph.Bar('bar2', [[23,25], [30,25], [27,28], [26,18], [31,20], [39,28], [27,29], [26,23]]);
+
+            bar2.Set('chart.tooltips', ['<b>2000</b><br />Girls only had an average<br />year in 2000',
+                                  '<b>2000</b><br />Boys had a slightly better<br />year in 2000',
+                                  '<b>2001</b><br />Girls had a good year',
+                                  '<b>2001</b><br />Boys had an average year',
+                                  '<b>2002</b><br />Both girls and boys had an average year',
+                                  '<b>2002</b><br />Both girls and boys had an average year',
+                                  '<b>2003</b><br />Girls had an average year in 2003',
+                                  '<b>2003</b><br />Boys had a rather poor showing in 2003',
+                                  '<b>2004</b><br />Girls had a good showing in 2004',
+                                  '<b>2004</b><br />Slightly better than than last year,<br />but still not good',
+                                  '<b>2005</b><br />Girls had a particularly good year',
+                                  '<b>2005</b><br />Boys got back up to par this year',
+                                  '<b>2006</b><br />Girls were back to average',
+                                  '<b>2006</b><br />Boys remained at an average level',
+                                  '<b>2007</b><br />Girls were more or less the same as last month',
+                                  '<b>2007</b><br />Boys were starting to drop again'
+                                 ]);
+            bar2.Set('chart.tooltip.effect', 'expand');
+
+            // if (!document.all) {
+            //     bar2.Set('chart.zoom.vdir', 'center');
+            //     bar2.Set('chart.contextmenu', [['Zoom', RGraph.Zoom], null, ['Cancel', function () {}]]);
+            // }
+
+            bar2.Set('chart.title', 'Population by gender (tooltips, context, zoom)');
+            bar2.Set('chart.title.color', '#1254A3');
+            // bar2.Set('chart.gutter', 65);
+            bar2.Set('chart.background.barcolor1', '#fff');
+            bar2.Set('chart.background.barcolor2', '#fff');
+            bar2.Set('chart.background.grid.hsize', 20);
+            bar2.Set('chart.background.grid.vsize', 20);
+            bar2.Set('chart.colors', ['pink', 'blue']);
+            bar2.Set('chart.labels', ['兰州', '玉门', '新疆', '陕西', '宁夏', '川渝', '青藏', '宝鸡','永登', '呼和', '郑州']);
+            bar2.Set('chart.text.angle', 0);
+            bar2.Set('chart.units.post', '吨');
+            bar2.Set('chart.shadow', true);
+            bar2.Set('chart.shadow.color', '#aaa');
+            bar2.Set('chart.strokecolor', 'rgba(0,0,0,0)');
+            bar2.Set('chart.labels.above', true);
+            bar2.Draw();
+        }
+    </script>
+</head>
+<body>
+  <canvas id="bar2" width="475" height="200"></canvas><br />
+</body>
+</html>

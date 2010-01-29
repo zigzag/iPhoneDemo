@@ -15,9 +15,11 @@
 	IBOutlet UIWebView *webView;
 	IBOutlet UIViewController *datePickController;
 	IBOutlet UIDatePicker *datePicker;
+	IBOutlet UISegmentedControl *chartSegment;
 }
 
 -(IBAction)tapSelectDate:(id)sender;
 -(IBAction)tapToday:(id)sender;
+-(IBAction)switchChart:(id)sender;
 
 @end

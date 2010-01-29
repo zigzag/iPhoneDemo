@@ -249,7 +249,6 @@
 -(void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
 	if (animationID == @"GO_TO_REPORT"){
 //		NSLog(@"Will set title to:%s",[self currentOrg]);
-		[[[[self tabBarController] viewControllers] objectAtIndex:0] setTitle:[[Definition sharedDefinition] currentOrg]];
 		[[self tabBarController] setSelectedIndex:0];
 	}
 }

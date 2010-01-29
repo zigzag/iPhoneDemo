@@ -17,8 +17,6 @@
 	IBOutlet UIDatePicker *datePicker;
 	IBOutlet UISegmentedControl *chartSegment;
 	IBOutlet UIView *contentView;
-	
-	
 }
 
 -(IBAction)tapSelectDate:(id)sender;

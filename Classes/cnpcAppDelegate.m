@@ -7,8 +7,10 @@
 //
 
 #import "cnpcAppDelegate.h"
-#import "ReportController.h"
+//#import "ReportController.h"
 #import "OrgController.h"
+
+#import "RepController.h"
 
 
 @implementation cnpcAppDelegate
@@ -23,7 +25,10 @@
 	// Get array of screens
 	// Build array of UIViewControllers for each screen
 
-	ReportController *reportController = [[[ReportController alloc]init] autorelease];
+//	ReportController *reportController = [[[ReportController alloc]init] autorelease];
+//	ReportController *reportController = [[[ReportController alloc]initWithNibName:@"ReportView" bundle:nil] autorelease];
+	RepController *reportController = [[RepController alloc]initWithNibName:@"RepController" bundle:nil];
+	
 	[reportController setTabBarItem:[[UITabBarItem alloc]initWithTitle:@"业务" image:[UIImage imageNamed:@"bar-chart.png"] tag:1]];
 
 	OrgController *orgController = [[[OrgController alloc]initWithLevel:0] autorelease];

@@ -1,15 +1,15 @@
 //
-//  ReportController.h
+//  untitled.h
 //  cnpc
 //
-//  Created by zigzag on 1/22/10.
+//  Created by zigzag on 1/28/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-@interface ReportController : UIViewController {
+@interface untitled : UIViewController {
 
 }
 

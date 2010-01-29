@@ -7,10 +7,8 @@
 //
 
 #import "OrgController.h"
-#import "ReportController.h"
 
 @implementation OrgController
-
 
 /* */
 - (id)initWithLevel:(NSInteger)level{

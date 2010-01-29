@@ -18,4 +18,6 @@
 }
 
 
+- (id)initWithLevel:(NSInteger)level;
+
 @end

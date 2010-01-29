@@ -11,6 +11,7 @@
 		0033E30411097B4100E01B07 /* fuel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30111097B4100E01B07 /* fuel.png */; };
 		0033E31811097C4E00E01B07 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E31711097C4E00E01B07 /* star.png */; };
 		007D4C5E110995A200DC7299 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C5D110995A200DC7299 /* index.html */; };
+		00A9CC701112849600032CB8 /* jquery-1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 00E0002B11117FEE00D9B21C /* jquery-1.4.js */; };
 		00E0019B1111BC1000D9B21C /* RepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E001991111BC1000D9B21C /* RepController.m */; };
 		00E0019C1111BC1000D9B21C /* RepController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E0019A1111BC1000D9B21C /* RepController.xib */; };
 		00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5B65F1109ACF0005EFC03 /* OrgController.m */; };
@@ -169,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				00A9CC701112849600032CB8 /* jquery-1.4.js in Resources */,
 				0033E30311097B4100E01B07 /* bar-chart.png in Resources */,
 				0033E30411097B4100E01B07 /* fuel.png in Resources */,
 				0033E31811097C4E00E01B07 /* star.png in Resources */,

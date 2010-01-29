@@ -31,7 +31,8 @@
 	//	//set the web view and acceleration delagates for the web view to be itself
 	////	[aWebView setDelegate:self];
 	
-	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]isDirectory:NO]]];
+//	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]isDirectory:NO]]];
+	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pie" ofType:@"html"]isDirectory:NO]]];
 	[self.view addSubview:naviController.view];
 }
 

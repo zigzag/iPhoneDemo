@@ -10,8 +10,13 @@
 		0033E30311097B4100E01B07 /* bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30011097B4100E01B07 /* bar-chart.png */; };
 		0033E30411097B4100E01B07 /* fuel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E30111097B4100E01B07 /* fuel.png */; };
 		0033E31811097C4E00E01B07 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033E31711097C4E00E01B07 /* star.png */; };
-		007D4C5E110995A200DC7299 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C5D110995A200DC7299 /* index.html */; };
-		00A9CC701112849600032CB8 /* jquery-1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 00E0002B11117FEE00D9B21C /* jquery-1.4.js */; };
+		00A9CC8E1112898C00032CB8 /* mootools-beta-1.2b2.js in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */; };
+		00A9CC8F1112898C00032CB8 /* pie.html in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CC851112895200032CB8 /* pie.html */; };
+		00A9CC901112898C00032CB8 /* piechart.css in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CC861112895200032CB8 /* piechart.css */; };
+		00A9CC911112898C00032CB8 /* piechart.js in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CC871112895200032CB8 /* piechart.js */; };
+		00A9CC921112898C00032CB8 /* spacer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00A9CC881112895200032CB8 /* spacer.gif */; };
+		00A9CC931112898C00032CB8 /* jquery-1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 00E0002B11117FEE00D9B21C /* jquery-1.4.js */; };
+		00A9CC941112898C00032CB8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 007D4C5D110995A200DC7299 /* index.html */; };
 		00E0019B1111BC1000D9B21C /* RepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E001991111BC1000D9B21C /* RepController.m */; };
 		00E0019C1111BC1000D9B21C /* RepController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E0019A1111BC1000D9B21C /* RepController.xib */; };
 		00E5B6601109ACF0005EFC03 /* OrgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5B65F1109ACF0005EFC03 /* OrgController.m */; };
@@ -28,6 +33,11 @@
 		0033E30111097B4100E01B07 /* fuel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuel.png; sourceTree = "<group>"; };
 		0033E31711097C4E00E01B07 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		007D4C5D110995A200DC7299 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mootools-beta-1.2b2.js"; sourceTree = "<group>"; };
+		00A9CC851112895200032CB8 /* pie.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pie.html; sourceTree = "<group>"; };
+		00A9CC861112895200032CB8 /* piechart.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = piechart.css; sourceTree = "<group>"; };
+		00A9CC871112895200032CB8 /* piechart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = piechart.js; sourceTree = "<group>"; };
+		00A9CC881112895200032CB8 /* spacer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spacer.gif; sourceTree = "<group>"; };
 		00E0002B11117FEE00D9B21C /* jquery-1.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.js"; sourceTree = "<group>"; };
 		00E001981111BC1000D9B21C /* RepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepController.h; sourceTree = "<group>"; };
 		00E001991111BC1000D9B21C /* RepController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepController.m; sourceTree = "<group>"; };
@@ -105,6 +115,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */,
+				00A9CC851112895200032CB8 /* pie.html */,
+				00A9CC861112895200032CB8 /* piechart.css */,
+				00A9CC871112895200032CB8 /* piechart.js */,
+				00A9CC881112895200032CB8 /* spacer.gif */,
 				00E0019A1111BC1000D9B21C /* RepController.xib */,
 				00E0002B11117FEE00D9B21C /* jquery-1.4.js */,
 				007D4C5D110995A200DC7299 /* index.html */,
@@ -169,13 +184,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				00A9CC701112849600032CB8 /* jquery-1.4.js in Resources */,
+				00A9CC8E1112898C00032CB8 /* mootools-beta-1.2b2.js in Resources */,
+				00A9CC8F1112898C00032CB8 /* pie.html in Resources */,
+				00A9CC901112898C00032CB8 /* piechart.css in Resources */,
+				00A9CC911112898C00032CB8 /* piechart.js in Resources */,
+				00A9CC921112898C00032CB8 /* spacer.gif in Resources */,
+				00E0019C1111BC1000D9B21C /* RepController.xib in Resources */,
+				00A9CC931112898C00032CB8 /* jquery-1.4.js in Resources */,
+				00A9CC941112898C00032CB8 /* index.html in Resources */,
+				0033E31811097C4E00E01B07 /* star.png in Resources */,
 				0033E30311097B4100E01B07 /* bar-chart.png in Resources */,
 				0033E30411097B4100E01B07 /* fuel.png in Resources */,
-				0033E31811097C4E00E01B07 /* star.png in Resources */,
-				007D4C5E110995A200DC7299 /* index.html in Resources */,
-				00E0019C1111BC1000D9B21C /* RepController.xib in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

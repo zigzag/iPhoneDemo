@@ -258,6 +258,83 @@
 		vrLen = 806;
 		vrLoc = 0;
 	};
+	00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2868, 7456}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 6052}";
+		};
+	};
+	00A9CC9A111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00E0002B11117FEE00D9B21C /* jquery-1.4.js */;
+		name = "jquery-1.4.js: 8";
+		rLen = 0;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 0;
+	};
+	00A9CC9B111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */;
+		name = "mootools-beta-1.2b2.js: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 6052;
+		vrLoc = 0;
+	};
+	00A9CC9C111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00E001991111BC1000D9B21C /* RepController.m */;
+		name = "RepController.m: 36";
+		rLen = 0;
+		rLoc = 1368;
+		rType = 0;
+		vrLen = 1086;
+		vrLoc = 550;
+	};
+	00A9CC9D111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00E0002B11117FEE00D9B21C /* jquery-1.4.js */;
+		name = "jquery-1.4.js: 8";
+		rLen = 0;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 0;
+	};
+	00A9CC9E111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00E001991111BC1000D9B21C /* RepController.m */;
+		name = "RepController.m: 36";
+		rLen = 0;
+		rLoc = 1368;
+		rType = 0;
+		vrLen = 1086;
+		vrLoc = 550;
+	};
+	00A9CC9F111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00A9CC841112895200032CB8 /* mootools-beta-1.2b2.js */;
+		name = "mootools-beta-1.2b2.js: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 6052;
+		vrLoc = 0;
+	};
+	00A9CCA0111289AC00032CB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00E001991111BC1000D9B21C /* RepController.m */;
+		name = "RepController.m: 28";
+		rLen = 0;
+		rLoc = 758;
+		rType = 0;
+		vrLen = 1151;
+		vrLoc = 550;
+	};
 	00ADD815111270E30081ED81 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 00E5B65E1109ACF0005EFC03 /* OrgController.h */;
@@ -282,7 +359,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 97488}}";
 			sepNavSelRange = "{187, 0}";
-			sepNavVisRange = "{0, 806}";
+			sepNavVisRange = "{0, 835}";
 		};
 	};
 	00E000371111829600D9B21C /* PBXTextBookmark */ = {
@@ -359,9 +436,9 @@
 	};
 	00E001991111BC1000D9B21C /* RepController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 1056}}";
-			sepNavSelRange = "{988, 0}";
-			sepNavVisRange = "{440, 1105}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1104}}";
+			sepNavSelRange = "{758, 0}";
+			sepNavVisRange = "{550, 1151}";
 			sepNavWindowFrame = "{{15, 160}, {796, 713}}";
 		};
 	};
@@ -410,7 +487,7 @@
 		fRef = 00E001991111BC1000D9B21C /* RepController.m */;
 		name = "RepController.m: 39";
 		rLen = 0;
-		rLoc = 1214;
+		rLoc = 1370;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -548,6 +625,13 @@
 			00A9CC7F1112849E00032CB8 /* PBXTextBookmark */ = 00A9CC7F1112849E00032CB8 /* PBXTextBookmark */;
 			00A9CC801112849E00032CB8 /* PBXTextBookmark */ = 00A9CC801112849E00032CB8 /* PBXTextBookmark */;
 			00A9CC811112849E00032CB8 /* PBXTextBookmark */ = 00A9CC811112849E00032CB8 /* PBXTextBookmark */;
+			00A9CC9A111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9A111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CC9B111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9B111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CC9C111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9C111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CC9D111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9D111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CC9E111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9E111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CC9F111289AC00032CB8 /* PBXTextBookmark */ = 00A9CC9F111289AC00032CB8 /* PBXTextBookmark */;
+			00A9CCA0111289AC00032CB8 /* PBXTextBookmark */ = 00A9CCA0111289AC00032CB8 /* PBXTextBookmark */;
 			00ADD815111270E30081ED81 = 00ADD815111270E30081ED81 /* PBXTextBookmark */;
 			00ADD84F11127B1C0081ED81 = 00ADD84F11127B1C0081ED81 /* PBXTextBookmark */;
 			00E000371111829600D9B21C = 00E000371111829600D9B21C /* PBXTextBookmark */;
